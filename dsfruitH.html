@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS 07/10</title>
+    <link rel="stylesheet" href="dsfruitC.css">
+</head>
+<body>
+
+    <!--Filtre et case à cocher-->
+    <input type="text" id="filter" placeholder="Filter products" />
+    <div>
+        <input type="checkbox" id="stockCheck" name="stockCheck"/>
+        <label for="stockCheck">Only show products in stock</label>
+    </div>
+
+    <!--Tableau-->
+    <table id="fruits-legumes-table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+        <!--Contenu du tableau-->
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+    <script src="dsfruitJ.mjs"></script>
+</html>

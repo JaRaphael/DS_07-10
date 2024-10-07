@@ -1,0 +1,45 @@
+/*Style du tableau*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 10px;
+}
+
+/*Style du contenu du tableau*/
+th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+}
+
+/*On fixe la largeur de Nom et Price prends le reste de la page*/
+th:first-child, td:first-child {
+    width: 100px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: auto;
+}
+
+/*Les noms deviennent rouges lorqu'on ajoute la classe rupture (rupture de stock)*/
+.rupture {
+    color: red;
+}
+
+/*Style du filtre*/
+#filter {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#filter:focus {
+    outline: none;
+    border-color:  rgb(0, 191, 255);
+    background-color: rgb(230, 242, 246);
+}
